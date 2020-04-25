@@ -89,11 +89,15 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="onSignInClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sdZ-2f-8ST"/>
+                                            <action selector="onSignInClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="495-l7-Cpn"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="VF1-CM-haF">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <color key="tintColor" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -101,6 +105,7 @@
                             <constraint firstItem="Rxx-OZ-8nb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="K1k-0D-Kif"/>
                             <constraint firstItem="xNY-AR-6t2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pjr-XC-IpN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cyd-SV-gLd" secondAttribute="trailing" constant="16" id="QMi-7s-3oc"/>
+                            <constraint firstItem="VF1-CM-haF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SaE-Bo-FYJ"/>
                             <constraint firstItem="Cyd-SV-gLd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="UPz-uW-Jsr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q18-od-m9j" secondAttribute="trailing" constant="16" id="UcP-g6-GPa"/>
                             <constraint firstItem="xNY-AR-6t2" firstAttribute="top" secondItem="Cyd-SV-gLd" secondAttribute="bottom" constant="16" id="WML-5F-DhB"/>
@@ -111,6 +116,7 @@
                             <constraint firstItem="q18-od-m9j" firstAttribute="top" secondItem="xNY-AR-6t2" secondAttribute="bottom" constant="32" id="fVe-bS-Mzw"/>
                             <constraint firstItem="C5G-J5-48v" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mbN-Tf-KZ7"/>
                             <constraint firstItem="Rxx-OZ-8nb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ubE-02-Grs"/>
+                            <constraint firstItem="VF1-CM-haF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yg5-vR-y5L"/>
                             <constraint firstItem="q18-od-m9j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="zMt-ep-1I2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -119,12 +125,46 @@
                         <outlet property="emailAddress" destination="V3Z-e8-e6A" id="tVa-ga-2UF"/>
                         <outlet property="facebookLoginButton" destination="xNY-AR-6t2" id="HCg-rQ-4TO"/>
                         <outlet property="header" destination="Rxx-OZ-8nb" id="D2a-oO-xax"/>
+                        <outlet property="loadingView" destination="VF1-CM-haF" id="0P5-Xk-n4K"/>
                         <outlet property="password" destination="Tb2-Dx-EYd" id="6yh-TZ-hl7"/>
+                        <segue destination="gHO-vJ-owZ" kind="show" identifier="FeedViewController" id="Le5-mp-hPS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="119.1904047976012"/>
+        </scene>
+        <!--Feed View Controller-->
+        <scene sceneID="Huz-cS-g6l">
+            <objects>
+                <viewController id="gHO-vJ-owZ" customClass="FeedViewController" customModule="devslopes_social" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HfO-WC-3gc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="va5-Yj-IS7">
+                                <rect key="frame" x="153.5" y="305.5" width="68" height="36"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="Sign Out">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onSignOutClick:" destination="gHO-vJ-owZ" eventType="touchUpInside" id="Y1K-he-G1w"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.51372549020000002" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="va5-Yj-IS7" firstAttribute="centerY" secondItem="HfO-WC-3gc" secondAttribute="centerY" id="7nz-U6-YcE"/>
+                            <constraint firstItem="va5-Yj-IS7" firstAttribute="centerX" secondItem="HfO-WC-3gc" secondAttribute="centerX" id="b98-MM-Coe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="a8C-a9-ESI"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nLb-tS-xeY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wLu-h6-H5y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1001" y="119"/>
         </scene>
     </scenes>
     <resources>

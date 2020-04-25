@@ -19,6 +19,8 @@
 		29901F2F2454B3DD00C45336 /* Shadowed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29901F2E2454B3DD00C45336 /* Shadowed.swift */; };
 		29901F322454B6E800C45336 /* Circled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29901F312454B6E800C45336 /* Circled.swift */; };
 		29901F342454BAD800C45336 /* FancyRoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29901F332454BAD800C45336 /* FancyRoundButton.swift */; };
+		29901F362454EA3700C45336 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29901F352454EA3700C45336 /* FeedViewController.swift */; };
+		29901F382454EA7A00C45336 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29901F372454EA7A00C45336 /* UIViewController.swift */; };
 		61E6176CBAE4A18892ED67AB /* Pods_devslopes_social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B7FA2B5B56DE29F0DC1ADF2 /* Pods_devslopes_social.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +40,8 @@
 		29901F2E2454B3DD00C45336 /* Shadowed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadowed.swift; sourceTree = "<group>"; };
 		29901F312454B6E800C45336 /* Circled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circled.swift; sourceTree = "<group>"; };
 		29901F332454BAD800C45336 /* FancyRoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyRoundButton.swift; sourceTree = "<group>"; };
+		29901F352454EA3700C45336 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		29901F372454EA7A00C45336 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		720E3BD43E0D4C526C6E53D8 /* Pods-devslopes-social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devslopes-social.release.xcconfig"; path = "Target Support Files/Pods-devslopes-social/Pods-devslopes-social.release.xcconfig"; sourceTree = "<group>"; };
 		94646082DD6D317A4321D11D /* Pods-devslopes-social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devslopes-social.debug.xcconfig"; path = "Target Support Files/Pods-devslopes-social/Pods-devslopes-social.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				29901F1124549A8E00C45336 /* SignInViewController.swift */,
+				29901F352454EA3700C45336 /* FeedViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 			children = (
 				29901F2E2454B3DD00C45336 /* Shadowed.swift */,
 				29901F312454B6E800C45336 /* Circled.swift */,
+				29901F372454EA7A00C45336 /* UIViewController.swift */,
 			);
 			path = protocol;
 			sourceTree = "<group>";
@@ -274,6 +280,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				29901F342454BAD800C45336 /* FancyRoundButton.swift in Sources */,
+				29901F382454EA7A00C45336 /* UIViewController.swift in Sources */,
+				29901F362454EA3700C45336 /* FeedViewController.swift in Sources */,
 				29901F322454B6E800C45336 /* Circled.swift in Sources */,
 				29901F2B2454AED200C45336 /* Constants.swift in Sources */,
 				29901F1224549A8E00C45336 /* SignInViewController.swift in Sources */,
