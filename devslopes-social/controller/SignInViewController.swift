@@ -9,10 +9,17 @@
 import UIKit
 
 class SignInViewController: UIViewController {
-
+    
+    @IBOutlet weak var header: FancyView!
+    @IBOutlet weak var facebookLoginButton: FancyRoundButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        header.addShadow()
+        facebookLoginButton.addShadow()
+        facebookLoginButton.circle()
+        
     }
 
 
