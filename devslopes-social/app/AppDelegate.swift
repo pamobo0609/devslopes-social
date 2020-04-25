@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FBSDKLoginKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,8 +17,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         
+        ApplicationDelegate.shared.application(
+            application,
+            didFinishLaunchingWithOptions: launchOptions
+        )
+        
         return true
     }
+          
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+        guard let context = URLContexts.first else {
+            return
+        }
+
+        ApplicationDelegate.shared.application(
+            UIApplication.shared,
+            open: context.url,
+            sourceApplication: context.options.sourceApplication,
+            annotation: context.options.annotation
+        )
+    }
+        
 
     // MARK: UISceneSession Lifecycle
 
@@ -33,6 +53,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
+    func application(_ app: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        return ApplicationDelegate.shared.application(app, open: url,
+                                                      sourceApplication: sourceApplication, annotation: annotation)
+    }
 
 }
 
