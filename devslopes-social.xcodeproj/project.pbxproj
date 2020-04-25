@@ -3,27 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		29901F0E24549A8E00C45336 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29901F0D24549A8E00C45336 /* AppDelegate.swift */; };
 		29901F1024549A8E00C45336 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29901F0F24549A8E00C45336 /* SceneDelegate.swift */; };
-		29901F1224549A8E00C45336 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29901F1124549A8E00C45336 /* ViewController.swift */; };
+		29901F1224549A8E00C45336 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29901F1124549A8E00C45336 /* SignInViewController.swift */; };
 		29901F1524549A8E00C45336 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29901F1324549A8E00C45336 /* Main.storyboard */; };
 		29901F1724549A9000C45336 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29901F1624549A9000C45336 /* Assets.xcassets */; };
 		29901F1A24549A9000C45336 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29901F1824549A9000C45336 /* LaunchScreen.storyboard */; };
+		29901F2524549DDA00C45336 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29901F2424549DDA00C45336 /* GoogleService-Info.plist */; };
+		61E6176CBAE4A18892ED67AB /* Pods_devslopes_social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B7FA2B5B56DE29F0DC1ADF2 /* Pods_devslopes_social.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B7FA2B5B56DE29F0DC1ADF2 /* Pods_devslopes_social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_devslopes_social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29901F0A24549A8E00C45336 /* devslopes-social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "devslopes-social.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29901F0D24549A8E00C45336 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29901F0F24549A8E00C45336 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		29901F1124549A8E00C45336 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		29901F1124549A8E00C45336 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		29901F1424549A8E00C45336 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		29901F1624549A9000C45336 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29901F1924549A9000C45336 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29901F1B24549A9000C45336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29901F2424549DDA00C45336 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		720E3BD43E0D4C526C6E53D8 /* Pods-devslopes-social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devslopes-social.release.xcconfig"; path = "Target Support Files/Pods-devslopes-social/Pods-devslopes-social.release.xcconfig"; sourceTree = "<group>"; };
+		94646082DD6D317A4321D11D /* Pods-devslopes-social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devslopes-social.debug.xcconfig"; path = "Target Support Files/Pods-devslopes-social/Pods-devslopes-social.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61E6176CBAE4A18892ED67AB /* Pods_devslopes_social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				29901F0C24549A8E00C45336 /* devslopes-social */,
 				29901F0B24549A8E00C45336 /* Products */,
+				F109F322564B763172E68A14 /* Pods */,
+				518AED170D10D07EAFCF416F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +65,65 @@
 		29901F0C24549A8E00C45336 /* devslopes-social */ = {
 			isa = PBXGroup;
 			children = (
-				29901F0D24549A8E00C45336 /* AppDelegate.swift */,
-				29901F0F24549A8E00C45336 /* SceneDelegate.swift */,
-				29901F1124549A8E00C45336 /* ViewController.swift */,
-				29901F1324549A8E00C45336 /* Main.storyboard */,
+				29901F2624549E0E00C45336 /* app */,
+				29901F2324549DC000C45336 /* model */,
+				29901F2224549DBC00C45336 /* view */,
+				29901F2124549DB600C45336 /* controller */,
 				29901F1624549A9000C45336 /* Assets.xcassets */,
-				29901F1824549A9000C45336 /* LaunchScreen.storyboard */,
 				29901F1B24549A9000C45336 /* Info.plist */,
+				29901F2424549DDA00C45336 /* GoogleService-Info.plist */,
 			);
 			path = "devslopes-social";
+			sourceTree = "<group>";
+		};
+		29901F2124549DB600C45336 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				29901F1124549A8E00C45336 /* SignInViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		29901F2224549DBC00C45336 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				29901F1824549A9000C45336 /* LaunchScreen.storyboard */,
+				29901F1324549A8E00C45336 /* Main.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		29901F2324549DC000C45336 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		29901F2624549E0E00C45336 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				29901F0D24549A8E00C45336 /* AppDelegate.swift */,
+				29901F0F24549A8E00C45336 /* SceneDelegate.swift */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		518AED170D10D07EAFCF416F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B7FA2B5B56DE29F0DC1ADF2 /* Pods_devslopes_social.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F109F322564B763172E68A14 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94646082DD6D317A4321D11D /* Pods-devslopes-social.debug.xcconfig */,
+				720E3BD43E0D4C526C6E53D8 /* Pods-devslopes-social.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +133,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29901F1E24549A9000C45336 /* Build configuration list for PBXNativeTarget "devslopes-social" */;
 			buildPhases = (
+				FB0269C547759DCFCD227DBD /* [CP] Check Pods Manifest.lock */,
 				29901F0624549A8E00C45336 /* Sources */,
 				29901F0724549A8E00C45336 /* Frameworks */,
 				29901F0824549A8E00C45336 /* Resources */,
+				533A717E6F4C1F71AFD70641 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29901F1A24549A9000C45336 /* LaunchScreen.storyboard in Resources */,
+				29901F2524549DDA00C45336 /* GoogleService-Info.plist in Resources */,
 				29901F1724549A9000C45336 /* Assets.xcassets in Resources */,
 				29901F1524549A8E00C45336 /* Main.storyboard in Resources */,
 			);
@@ -133,12 +195,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		533A717E6F4C1F71AFD70641 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-devslopes-social/Pods-devslopes-social-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-devslopes-social/Pods-devslopes-social-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-devslopes-social/Pods-devslopes-social-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB0269C547759DCFCD227DBD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-devslopes-social-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		29901F0624549A8E00C45336 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29901F1224549A8E00C45336 /* ViewController.swift in Sources */,
+				29901F1224549A8E00C45336 /* SignInViewController.swift in Sources */,
 				29901F0E24549A8E00C45336 /* AppDelegate.swift in Sources */,
 				29901F1024549A8E00C45336 /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +386,7 @@
 		};
 		29901F1F24549A9000C45336 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94646082DD6D317A4321D11D /* Pods-devslopes-social.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +405,7 @@
 		};
 		29901F2024549A9000C45336 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 720E3BD43E0D4C526C6E53D8 /* Pods-devslopes-social.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
