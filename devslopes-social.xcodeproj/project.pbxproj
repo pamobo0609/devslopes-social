@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29845C8A2454FC3B00C07514 /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29845C892454FC3B00C07514 /* UITableViewCell.swift */; };
+		29845C8C2455018B00C07514 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29845C8B2455018B00C07514 /* CircleView.swift */; };
 		29901F0E24549A8E00C45336 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29901F0D24549A8E00C45336 /* AppDelegate.swift */; };
 		29901F1024549A8E00C45336 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29901F0F24549A8E00C45336 /* SceneDelegate.swift */; };
 		29901F1224549A8E00C45336 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29901F1124549A8E00C45336 /* SignInViewController.swift */; };
@@ -26,6 +28,8 @@
 
 /* Begin PBXFileReference section */
 		1B7FA2B5B56DE29F0DC1ADF2 /* Pods_devslopes_social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_devslopes_social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29845C892454FC3B00C07514 /* UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
+		29845C8B2455018B00C07514 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		29901F0A24549A8E00C45336 /* devslopes-social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "devslopes-social.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29901F0D24549A8E00C45336 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29901F0F24549A8E00C45336 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +111,7 @@
 				29901F1324549A8E00C45336 /* Main.storyboard */,
 				29901F272454AE3A00C45336 /* FancyView.swift */,
 				29901F332454BAD800C45336 /* FancyRoundButton.swift */,
+				29845C8B2455018B00C07514 /* CircleView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -142,6 +147,7 @@
 				29901F2E2454B3DD00C45336 /* Shadowed.swift */,
 				29901F312454B6E800C45336 /* Circled.swift */,
 				29901F372454EA7A00C45336 /* UIViewController.swift */,
+				29845C892454FC3B00C07514 /* UITableViewCell.swift */,
 			);
 			path = protocol;
 			sourceTree = "<group>";
@@ -279,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29845C8C2455018B00C07514 /* CircleView.swift in Sources */,
 				29901F342454BAD800C45336 /* FancyRoundButton.swift in Sources */,
 				29901F382454EA7A00C45336 /* UIViewController.swift in Sources */,
 				29901F362454EA3700C45336 /* FeedViewController.swift in Sources */,
@@ -289,6 +296,7 @@
 				29901F282454AE3A00C45336 /* FancyView.swift in Sources */,
 				29901F1024549A8E00C45336 /* SceneDelegate.swift in Sources */,
 				29901F2F2454B3DD00C45336 /* Shadowed.swift in Sources */,
+				29845C8A2454FC3B00C07514 /* UITableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

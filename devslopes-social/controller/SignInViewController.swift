@@ -95,7 +95,10 @@ class SignInViewController: UIViewController {
     
     func completeSignIn() {
         if nil != Auth.auth().currentUser {
-            performSegue(withIdentifier: FeedViewController.reuseIdentifier, sender: nil)
+            let feedViewController = FeedViewController()
+            feedViewController.modalPresentationStyle = .fullScreen
+            //performSegue(withIdentifier: FeedViewController.reuseIdentifier, sender: nil)
+            self.present(feedViewController, animated: true, completion: nil)
         }
     }
     

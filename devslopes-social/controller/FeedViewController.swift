@@ -11,20 +11,18 @@ import FirebaseAuth
 
 class FeedViewController: UIViewController {
 
+    
+    @IBOutlet weak var feedContainer: FancyView!
+    @IBOutlet weak var newPostContainer: FancyView!
+    @IBOutlet weak var postButton: FancyRoundButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        feedContainer.addShadow()
+        newPostContainer.addShadow()
+        postButton.circle()
         
-    }
-
-    @IBAction func onSignOutClick(_ sender: UIButton) {
-        do {
-            try Auth.auth().signOut()
-            print("Successfully logged out from Firebase.")
-            dismiss(animated: true, completion: nil)
-        } catch {
-            print("Unable to sign out from Firebase due to: \(error.localizedDescription)")
-        }
     }
     
 }
