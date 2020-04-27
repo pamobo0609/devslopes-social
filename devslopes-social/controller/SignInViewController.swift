@@ -95,8 +95,7 @@ class SignInViewController: UIViewController {
     
     func completeSignIn(provider: String) {
         if let currentUser = Auth.auth().currentUser {
-            let userData = ["provider": provider]
-            DataService.ds.createFirebaseUser(uid: currentUser.uid, userData: userData)
+            DataService.ds.createFirebaseUser(uid: currentUser.uid, userData: ["provider": provider])
         }
         
         if nil != Auth.auth().currentUser {

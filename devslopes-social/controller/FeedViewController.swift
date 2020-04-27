@@ -11,7 +11,6 @@ import FirebaseAuth
 
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    @IBOutlet weak var onSignOutClick: UIImageView!
     @IBOutlet weak var feedContainer: FancyView!
     @IBOutlet weak var newPostContainer: FancyView!
     @IBOutlet weak var postButton: FancyRoundButton!
@@ -26,6 +25,10 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        DataService.ds.REF_POSTS.observe(.value, with: { snapshot in
+            
+        })
         
     }
     
