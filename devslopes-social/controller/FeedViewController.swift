@@ -25,6 +25,8 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     var imagePicker: UIImagePickerController!
     
+    var imageSelected = false
+    
     var posts = [Post]()
     
     override func viewDidLoad() {
@@ -81,7 +83,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             return
         }
         
-        guard let image = imageAdd.image else {
+        guard let image = imageAdd.image, true == imageSelected else {
             print("An image is mandatory")
             return
         }
@@ -143,6 +145,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let image = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
             imageAdd.image = image
+            imageSelected = true
         } else {
             print("Image not selected!")
         }

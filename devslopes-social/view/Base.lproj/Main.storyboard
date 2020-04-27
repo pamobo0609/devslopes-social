@@ -249,8 +249,9 @@
                                                                     <color key="textColor" red="0.86666666670000003" green="0.17254901959999999" blue="0.0" alpha="0.87" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty-heart" translatesAutoresizingMaskIntoConstraints="NO" id="xhp-G6-8iC">
+                                                                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty-heart" translatesAutoresizingMaskIntoConstraints="NO" id="xhp-G6-8iC">
                                                                     <rect key="frame" x="283" y="0.0" width="60" height="60"/>
+                                                                    <gestureRecognizers/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="60" id="Y7N-0A-enE"/>
                                                                         <constraint firstAttribute="width" constant="60" id="aGL-v5-hn2"/>
@@ -323,6 +324,7 @@
                                         <connections>
                                             <outlet property="caption" destination="exc-kY-d5I" id="KyY-B8-fqt"/>
                                             <outlet property="content" destination="F2O-pc-Kga" id="GGm-Ic-ZZ2"/>
+                                            <outlet property="likesButton" destination="xhp-G6-8iC" id="ixr-HP-cB5"/>
                                             <outlet property="likesLbl" destination="dH9-5F-AWl" id="axO-lZ-n2Z"/>
                                             <outlet property="postImg" destination="cdj-e8-m8Z" id="Ls2-r1-SIf"/>
                                             <outlet property="profileImg" destination="95V-Hv-eTf" id="jLu-TR-aRT"/>

@@ -45,8 +45,7 @@ class DataService {
     }
 
     func createPost(aPost: Post) {
-        REF_POSTS.child(NSUUID().uuidString)
-            .updateChildValues(["caption": aPost.caption, "imageUrl": aPost.imageUrl, "likes": aPost.likes])
+        REF_POSTS.childByAutoId().updateChildValues(["caption": aPost.caption, "imageUrl": aPost.imageUrl, "likes": aPost.likes])
     }
     
 }
