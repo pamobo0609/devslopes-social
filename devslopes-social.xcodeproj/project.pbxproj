@@ -26,6 +26,7 @@
 		29CFB9F324571FCB00272E6D /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CFB9F224571FCB00272E6D /* FeedTableViewCell.swift */; };
 		29CFB9F52457237600272E6D /* FancyRoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CFB9F42457237600272E6D /* FancyRoundImageView.swift */; };
 		29CFB9F824572F5D00272E6D /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CFB9F724572F5C00272E6D /* DataService.swift */; };
+		29CFB9FA2457485000272E6D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CFB9F92457485000272E6D /* Post.swift */; };
 		61E6176CBAE4A18892ED67AB /* Pods_devslopes_social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B7FA2B5B56DE29F0DC1ADF2 /* Pods_devslopes_social.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		29CFB9F224571FCB00272E6D /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		29CFB9F42457237600272E6D /* FancyRoundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyRoundImageView.swift; sourceTree = "<group>"; };
 		29CFB9F724572F5C00272E6D /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		29CFB9F92457485000272E6D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		720E3BD43E0D4C526C6E53D8 /* Pods-devslopes-social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devslopes-social.release.xcconfig"; path = "Target Support Files/Pods-devslopes-social/Pods-devslopes-social.release.xcconfig"; sourceTree = "<group>"; };
 		94646082DD6D317A4321D11D /* Pods-devslopes-social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devslopes-social.debug.xcconfig"; path = "Target Support Files/Pods-devslopes-social/Pods-devslopes-social.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,6 +130,7 @@
 		29901F2324549DC000C45336 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				29CFB9F92457485000272E6D /* Post.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				29901F0E24549A8E00C45336 /* AppDelegate.swift in Sources */,
 				29CFB9F824572F5D00272E6D /* DataService.swift in Sources */,
 				29901F282454AE3A00C45336 /* FancyView.swift in Sources */,
+				29CFB9FA2457485000272E6D /* Post.swift in Sources */,
 				29901F1024549A8E00C45336 /* SceneDelegate.swift in Sources */,
 				29CFB9F52457237600272E6D /* FancyRoundImageView.swift in Sources */,
 				29901F2F2454B3DD00C45336 /* Shadowed.swift in Sources */,

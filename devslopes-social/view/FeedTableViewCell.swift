@@ -25,8 +25,9 @@ class FeedTableViewCell: UITableViewCell {
         
     }
 
-    func bind() {
-        
+    func bind(aPost: Post) {
+        caption.text = aPost.caption
+        likesLbl.text = "\(aPost.likes)"
     }
     
 }
