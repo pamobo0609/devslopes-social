@@ -67,7 +67,7 @@ class SignInViewController: UIViewController {
                 print("Unable to authenticate with Firebase due to: \(String(describing: error))")
             } else {
                 print("Successfully authenticated with Firebase")
-                self.completeSignIn()
+                self.completeSignIn(provider: credential.provider)
             }
             self.toggleLoadingView(isHidden: true)
         })
@@ -77,13 +77,13 @@ class SignInViewController: UIViewController {
         Auth.auth().signIn(withEmail: email, password: password, completion: { (user, error) in
             if nil == error {
                 print("Successfully authenticated with Firebase")
-                self.completeSignIn()
+                self.completeSignIn(provider: "firebase")
             } else {
                 // Getting here means the user does not existe. So we'll create it.
                 Auth.auth().createUser(withEmail: email, password: password, completion: { (result, error) in
                     if nil == error {
                         print("Successfully authenticated with Firebase")
-                        self.completeSignIn()
+                        self.completeSignIn(provider: "firebase")
                     } else {
                         print("Unable to authenticate with Firebase due to: \(String(describing: error))")
                     }
@@ -93,12 +93,14 @@ class SignInViewController: UIViewController {
         })
     }
     
-    func completeSignIn() {
+    func completeSignIn(provider: String) {
+        if let currentUser = Auth.auth().currentUser {
+            let userData = ["provider": provider]
+            DataService.ds.createFirebaseUser(uid: currentUser.uid, userData: userData)
+        }
+        
         if nil != Auth.auth().currentUser {
-            let feedViewController = FeedViewController()
-            feedViewController.modalPresentationStyle = .fullScreen
-            //performSegue(withIdentifier: FeedViewController.reuseIdentifier, sender: nil)
-            self.present(feedViewController, animated: true, completion: nil)
+            performSegue(withIdentifier: FeedViewController.reuseIdentifier, sender: nil)
         }
     }
     

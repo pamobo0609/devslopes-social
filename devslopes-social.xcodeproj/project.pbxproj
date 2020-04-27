@@ -23,6 +23,9 @@
 		29901F342454BAD800C45336 /* FancyRoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29901F332454BAD800C45336 /* FancyRoundButton.swift */; };
 		29901F362454EA3700C45336 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29901F352454EA3700C45336 /* FeedViewController.swift */; };
 		29901F382454EA7A00C45336 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29901F372454EA7A00C45336 /* UIViewController.swift */; };
+		29CFB9F324571FCB00272E6D /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CFB9F224571FCB00272E6D /* FeedTableViewCell.swift */; };
+		29CFB9F52457237600272E6D /* FancyRoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CFB9F42457237600272E6D /* FancyRoundImageView.swift */; };
+		29CFB9F824572F5D00272E6D /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CFB9F724572F5C00272E6D /* DataService.swift */; };
 		61E6176CBAE4A18892ED67AB /* Pods_devslopes_social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B7FA2B5B56DE29F0DC1ADF2 /* Pods_devslopes_social.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +49,9 @@
 		29901F332454BAD800C45336 /* FancyRoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyRoundButton.swift; sourceTree = "<group>"; };
 		29901F352454EA3700C45336 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		29901F372454EA7A00C45336 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		29CFB9F224571FCB00272E6D /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		29CFB9F42457237600272E6D /* FancyRoundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyRoundImageView.swift; sourceTree = "<group>"; };
+		29CFB9F724572F5C00272E6D /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		720E3BD43E0D4C526C6E53D8 /* Pods-devslopes-social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devslopes-social.release.xcconfig"; path = "Target Support Files/Pods-devslopes-social/Pods-devslopes-social.release.xcconfig"; sourceTree = "<group>"; };
 		94646082DD6D317A4321D11D /* Pods-devslopes-social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devslopes-social.debug.xcconfig"; path = "Target Support Files/Pods-devslopes-social/Pods-devslopes-social.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,6 +89,7 @@
 		29901F0C24549A8E00C45336 /* devslopes-social */ = {
 			isa = PBXGroup;
 			children = (
+				29CFB9F624572F4900272E6D /* services */,
 				29901F302454B6A600C45336 /* protocol */,
 				29901F2624549E0E00C45336 /* app */,
 				29901F2324549DC000C45336 /* model */,
@@ -112,6 +119,8 @@
 				29901F272454AE3A00C45336 /* FancyView.swift */,
 				29901F332454BAD800C45336 /* FancyRoundButton.swift */,
 				29845C8B2455018B00C07514 /* CircleView.swift */,
+				29CFB9F224571FCB00272E6D /* FeedTableViewCell.swift */,
+				29CFB9F42457237600272E6D /* FancyRoundImageView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -150,6 +159,14 @@
 				29845C892454FC3B00C07514 /* UITableViewCell.swift */,
 			);
 			path = protocol;
+			sourceTree = "<group>";
+		};
+		29CFB9F624572F4900272E6D /* services */ = {
+			isa = PBXGroup;
+			children = (
+				29CFB9F724572F5C00272E6D /* DataService.swift */,
+			);
+			path = services;
 			sourceTree = "<group>";
 		};
 		518AED170D10D07EAFCF416F /* Frameworks */ = {
@@ -290,11 +307,14 @@
 				29901F382454EA7A00C45336 /* UIViewController.swift in Sources */,
 				29901F362454EA3700C45336 /* FeedViewController.swift in Sources */,
 				29901F322454B6E800C45336 /* Circled.swift in Sources */,
+				29CFB9F324571FCB00272E6D /* FeedTableViewCell.swift in Sources */,
 				29901F2B2454AED200C45336 /* Constants.swift in Sources */,
 				29901F1224549A8E00C45336 /* SignInViewController.swift in Sources */,
 				29901F0E24549A8E00C45336 /* AppDelegate.swift in Sources */,
+				29CFB9F824572F5D00272E6D /* DataService.swift in Sources */,
 				29901F282454AE3A00C45336 /* FancyView.swift in Sources */,
 				29901F1024549A8E00C45336 /* SceneDelegate.swift in Sources */,
+				29CFB9F52457237600272E6D /* FancyRoundImageView.swift in Sources */,
 				29901F2F2454B3DD00C45336 /* Shadowed.swift in Sources */,
 				29845C8A2454FC3B00C07514 /* UITableViewCell.swift in Sources */,
 			);

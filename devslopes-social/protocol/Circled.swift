@@ -30,4 +30,10 @@ extension Circled where Self: UIImageView {
         layer.cornerRadius = self.frame.width / 2
     }
     
+    func circle() {
+        layer.cornerRadius = frame.width / 2
+    }
+    
 }
+
+
